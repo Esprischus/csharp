@@ -29,5 +29,26 @@ namespace Multiplicacion
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			double n,c,xd;
+			n=Convert.ToDouble(txtNum1.Text);
+			c=Convert.ToDouble(txtNum2.Text);
+			xd= n*c;
+			lblRe.Text=Convert.ToString(xd);
+		}
+		
+		void Button3Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+		
+		void Button2Click(object sender, EventArgs e)
+		{
+			txtNum1.Text="";
+			txtNum2.Text="";
+			lblRe.Text="";
+		}
 	}
 }
